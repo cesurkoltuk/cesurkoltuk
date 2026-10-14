@@ -1,215 +1,165 @@
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cesur Koltuk | Sultanbeyli Koltuk Tamir, Tadilat & Döşeme Atölyesi</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Cesur Koltuk | Koltuk Tamir, DÃ¶ÅŸeme ve Yenileme AtÃ¶lyesi</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- Tailwind Custom Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            navy: '#0B132B',       // Gece Mavisi / Kurumsal zemin
-                            dark: '#1C2541',       // İkincil Koyu Ton
-                            gold: '#C59B27',       // Lüks Altın Aksan
-                            goldHover: '#A37F1E',
-                            cream: '#FAF8F5',      // Sıcak Fildişi Arka Plan
-                            card: '#FFFFFF',
-                            text: '#2D3748',
-                            muted: '#64748B'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                        cinzel: ['Cinzel', 'serif']
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #E6C667 0%, #C59B27 50%, #947112 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .gold-border-glow {
-            box-shadow: 0 0 15px rgba(197, 155, 39, 0.2);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-brand-cream text-brand-text font-sans antialiased selection:bg-brand-gold selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
 
-    <!-- TOPBAR (ÜST BİLGİ BARI) -->
-    <div class="bg-brand-navy text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800/80 hidden lg:block">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-6">
-                <span class="flex items-center gap-2"><i class="fa-solid fa-award text-brand-gold"></i> <strong>25 Yılı Aşkın</strong> Ustalık & Zanaat Tecrübesi</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-gold"></i> Sultanbeyli / İstanbul</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-gold"></i> cesurkoltuk@proton.me</span>
+    <!-- ÃœST BÄ°LGÄ° Ã‡UBUÄU -->
+    <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 sm:gap-6 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-award text-amber-500"></i> <strong>25 YÄ±lÄ± AÅŸkÄ±n</strong> UstalÄ±k & Zanaat TecrÃ¼besi</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-amber-500"></i> Sultanbeyli / Ä°stanbul</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-envelope text-amber-500"></i> cesurkoltuk@proton.me</span>
             </div>
-            <div class="flex items-center space-x-6">
-                <span class="text-brand-gold font-medium"><i class="fa-solid fa-truck-ramp-box mr-1"></i> Evden Alım & Teslimat</span>
-                <a href="tel:+905356529009" class="hover:text-white font-bold text-brand-gold transition flex items-center gap-1.5">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-truck-fast text-amber-500"></i> Evden AlÄ±m & Teslimat</span>
+                <a href="tel:05356529009" class="hover:text-amber-400 font-bold transition flex items-center gap-1 text-white bg-amber-600 px-3 py-1 rounded-full text-xs">
                     <i class="fa-solid fa-phone"></i> 0535 652 90 09
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- MASAÜSTÜ & MOBİL NAVİGASYON -->
-    <nav class="sticky top-0 z-40 bg-brand-cream/95 backdrop-blur-md border-b border-amber-900/10 shadow-sm">
+    <!-- HEADER / MENÃœ -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                
+            <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <a href="#hero" class="flex items-center space-x-3 group">
-                    <div class="w-12 h-12 bg-brand-navy rounded-xl flex items-center justify-center text-brand-gold border border-brand-gold/30 shadow-md group-hover:bg-brand-gold group-hover:text-white transition duration-300">
-                        <i class="fa-solid fa-couch text-2xl"></i>
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-amber-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-amber-600/30 group-hover:bg-amber-700 transition">
+                        <i class="fa-solid fa-couch text-xl"></i>
                     </div>
                     <div>
-                        <span class="font-cinzel font-bold text-2xl text-brand-navy tracking-wider block leading-none">CESUR KOLTUK</span>
-                        <span class="text-[10px] font-semibold text-brand-gold tracking-widest uppercase mt-1 block">Döşeme & Tamir Atölyesi</span>
+                        <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">CESUR KOLTUK</span>
+                        <span class="text-xs font-semibold text-amber-600 tracking-wider uppercase mt-1 block">DÃ¶ÅŸeme & Tamir AtÃ¶lyesi</span>
                     </div>
                 </a>
 
-                <!-- Navigasyon Linkleri -->
-                <div class="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-700">
-                    <a href="#hero" class="hover:text-brand-gold transition">Ana Sayfa</a>
-                    <a href="#hakkimizda" class="hover:text-brand-gold transition">25 Yıllık Ustalık</a>
-                    <a href="#hizmetlerimiz" class="hover:text-brand-gold transition">Hizmetlerimiz</a>
-                    <a href="#surec" class="hover:text-brand-gold transition">Çalışma Süreci</a>
-                    <a href="#galeri" class="hover:text-brand-gold transition">Atölye Görselleri</a>
-                    <a href="#iletisim" class="hover:text-brand-gold transition">İletişim</a>
-                </div>
+                <!-- MasaÃ¼stÃ¼ Navigasyon -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                    <a href="#hero" class="hover:text-amber-600 transition">Ana Sayfa</a>
+                    <a href="#hakkimizda" class="hover:text-amber-600 transition">25 YÄ±llÄ±k UstalÄ±k</a>
+                    <a href="#hizmetlerimiz" class="hover:text-amber-600 transition">Hizmetlerimiz</a>
+                    <a href="#surec" class="hover:text-amber-600 transition">Ã‡alÄ±ÅŸma SÃ¼reci</a>
+                    <a href="#galeri" class="hover:text-amber-600 transition">AtÃ¶lye GÃ¶rselleri</a>
+                    <a href="#iletisim" class="hover:text-amber-600 transition">Ä°letiÅŸim</a>
+                </nav>
 
-                <!-- İletişim & Teklif Butonları -->
-                <div class="hidden lg:flex items-center space-x-3">
-                    <a href="tel:+905356529009" class="bg-slate-100 hover:bg-slate-200 text-brand-navy px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 border border-slate-300">
-                        <i class="fa-solid fa-phone text-brand-gold"></i> 0535 652 90 09
+                <!-- HÄ±zlÄ± Aksiyon -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="tel:05356529009" class="flex items-center gap-2.5 bg-slate-100 hover:bg-slate-200 text-slate-900 px-4 py-2.5 rounded-xl font-bold text-sm transition">
+                        <i class="fa-solid fa-phone-volume text-amber-600"></i>
+                        <span>0535 652 90 09</span>
                     </a>
-                    <button onclick="openQuoteModal()" class="bg-brand-navy hover:bg-brand-dark text-white px-5 py-2.5 rounded-xl font-medium text-xs flex items-center gap-2 shadow-md border border-brand-gold/40 transition transform hover:-translate-y-0.5">
-                        <i class="fa-solid fa-camera text-brand-gold"></i> Fotoğrafla Fiyat Al
-                    </button>
                 </div>
 
-                <!-- Mobil Menü Butonu -->
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-brand-navy p-2 rounded-lg hover:bg-amber-100/50 focus:outline-none">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobil Açılır Menü -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-brand-cream border-b border-amber-900/10 px-4 pt-3 pb-6 space-y-3">
-            <a href="#hero" class="block py-2 text-slate-800 font-medium hover:text-brand-gold">Ana Sayfa</a>
-            <a href="#hakkimizda" class="block py-2 text-slate-800 font-medium hover:text-brand-gold">25 Yıllık Ustalık</a>
-            <a href="#hizmetlerimiz" class="block py-2 text-slate-800 font-medium hover:text-brand-gold">Hizmetlerimiz</a>
-            <a href="#surec" class="block py-2 text-slate-800 font-medium hover:text-brand-gold">Nasıl Çalışırız?</a>
-            <a href="#galeri" class="block py-2 text-slate-800 font-medium hover:text-brand-gold">Çalışmalarımız</a>
-            <a href="#iletisim" class="block py-2 text-slate-800 font-medium hover:text-brand-gold">İletişim</a>
-            
-            <div class="pt-3 grid grid-cols-2 gap-2">
-                <a href="tel:+905356529009" class="bg-brand-navy text-white py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-phone text-brand-gold"></i> Ara
-                </a>
-                <button onclick="openQuoteModal()" class="bg-green-600 text-white py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                <!-- Mobil MenÃ¼ Butonu -->
+                <button id="menu-btn" class="md:hidden text-slate-700 hover:text-amber-600 text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
-    </nav>
 
-    <!-- 1. HERO SECTION -->
-    <section id="hero" class="relative bg-brand-navy text-white overflow-hidden py-16 lg:py-24 border-b border-brand-gold/20">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C59B27_1px,transparent_1px)] [background-size:24px_24px]"></div>
-        
+        <!-- Mobil MenÃ¼ AÃ§Ä±lÄ±r AlanÄ± -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-4 space-y-3">
+            <a href="#hero" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">Ana Sayfa</a>
+            <a href="#hakkimizda" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">25 YÄ±llÄ±k UstalÄ±k</a>
+            <a href="#hizmetlerimiz" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">Hizmetlerimiz</a>
+            <a href="#surec" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">NasÄ±l Ã‡alÄ±ÅŸÄ±rÄ±z?</a>
+            <a href="#galeri" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">Ã‡alÄ±ÅŸmalarÄ±mÄ±z</a>
+            <a href="#iletisim" class="block py-2 text-slate-700 hover:text-amber-600 font-medium">Ä°letiÅŸim</a>
+            <div class="pt-2">
+                <a href="tel:05356529009" class="flex items-center justify-center gap-2 bg-amber-600 text-white w-full py-3 rounded-xl font-bold shadow-lg shadow-amber-600/30">
+                    <i class="fa-solid fa-phone"></i> Ara
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BÃ–LÃœMÃœ -->
+    <section id="hero" class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-brand-gold/40 text-brand-gold px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide">
-                        <i class="fa-solid fa-location-dot"></i> Sultanbeyli / İstanbul • 25+ Yıl Tecrübe
+                    <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-shield-halved"></i> Sultanbeyli / Ä°stanbul â€¢ 25+ YÄ±l TecrÃ¼be
                     </div>
                     
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight">
-                        Eski Mobilyalarınıza <br class="hidden sm:inline">
-                        <span class="gold-gradient-text">Ustalıkla Yeniden</span> Can Veriyoruz
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Eski MobilyalarÄ±nÄ±za <br>
+                        <span class="text-amber-500 underline decoration-amber-500/30 underline-offset-8">UstalÄ±kla Yeniden</span> Can Veriyoruz
                     </h1>
                     
-                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                        Cesur Koltuk Atölyesi olarak; Sultanbeyli ve çevresinde yıpranan, çöken veya kumaşı eskileyen oturma gruplarınızı, berjer ve sandalyelerinizi titiz zanaatkarlıkla ilk günkü kalitesine kavuşturuyoruz.
+                    <p class="text-slate-300 text-lg sm:text-xl font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Cesur Koltuk AtÃ¶lyesi olarak; Sultanbeyli ve Ã§evresinde yÄ±pranan, Ã§Ã¶ken veya kumaÅŸÄ± eskileyen oturma gruplarÄ±nÄ±zÄ±, berjer ve sandalyelerinizi titiz zanaatkarlÄ±kla ilk gÃ¼nkÃ¼ kalitesine kavuÅŸturuyoruz.
                     </p>
 
-                    <!-- Rozetler -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-amber-100/90 font-medium">
-                        <div class="flex items-center justify-center lg:justify-start gap-2">
-                            <i class="fa-solid fa-circle-check text-brand-gold"></i> Adresten Ücretsiz Alım
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-sm font-medium text-slate-200 pt-2">
+                        <div class="flex items-center gap-2 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+                            <i class="fa-solid fa-check text-amber-500"></i> Adresten Ãœcretsiz AlÄ±m
                         </div>
-                        <div class="flex items-center justify-center lg:justify-start gap-2">
-                            <i class="fa-solid fa-circle-check text-brand-gold"></i> Garantili İşçilik
+                        <div class="flex items-center gap-2 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+                            <i class="fa-solid fa-check text-amber-500"></i> Garantili Ä°ÅŸÃ§ilik
                         </div>
-                        <div class="flex items-center justify-center lg:justify-start gap-2">
-                            <i class="fa-solid fa-circle-check text-brand-gold"></i> Geniş Kumaş Seçenekleri
+                        <div class="flex items-center gap-2 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+                            <i class="fa-solid fa-check text-amber-500"></i> GeniÅŸ KumaÅŸ SeÃ§enekleri
                         </div>
                     </div>
 
-                    <!-- CTA Butonları -->
-                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <button onclick="openQuoteModal()" class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-xl font-semibold text-base shadow-lg shadow-green-600/30 transition transform hover:-translate-y-1 flex items-center justify-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i> Fotoğraf Gönder, Teklif Al
+                    <!-- Aksiyon ButonlarÄ± -->
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <button onclick="openWhatsAppModal()" class="flex items-center justify-center gap-3 bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-amber-600/30 transition transform hover:-translate-y-0.5 text-base">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> FotoÄŸraf GÃ¶nder, Fiyat Al
                         </button>
-                        <a href="tel:+905356529009" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-4 rounded-xl font-semibold text-base backdrop-blur-sm transition flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-phone text-brand-gold"></i> 0535 652 90 09
+                        <a href="tel:05356529009" class="flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-2xl border border-slate-700 transition text-base">
+                            <i class="fa-solid fa-phone text-amber-500"></i> 0535 652 90 09
                         </a>
                     </div>
-                    <p class="text-xs text-slate-400 font-light">
-                        * Sektör gereği her işin detayları ve ihtiyacı farklıdır; fotoğraf göndererek en doğru bilgiyi alabilirsiniz.
+                    <p class="text-xs text-slate-400 italic">
+                        * SektÃ¶r gereÄŸi her iÅŸin detaylarÄ± ve ihtiyacÄ± farklÄ±dÄ±r; fotoÄŸraf gÃ¶ndererek en doÄŸru bilgiyi alabilirsiniz.
                     </p>
                 </div>
 
-                <!-- Hero Kart Alanı -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden shadow-2xl border-2 border-brand-gold/30 bg-brand-dark p-6 text-center space-y-6">
-                        <div class="w-20 h-20 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center text-4xl mx-auto border border-brand-gold/30">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                <!-- SaÄŸ Kart / Ã–zet -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-800/90 border border-slate-700 p-8 rounded-3xl shadow-2xl relative backdrop-blur-sm">
+                        <div class="absolute -top-4 -right-4 bg-amber-500 text-slate-950 font-extrabold px-4 py-2 rounded-2xl shadow-lg text-sm flex items-center gap-1.5">
+                            <i class="fa-solid fa-star"></i> 25 YÄ±llÄ±k GÃ¼ven
                         </div>
-                        <h3 class="text-2xl font-serif font-bold text-white">Güvenilir Ustalık, Kaliteli Hizmet</h3>
-                        <p class="text-xs text-slate-300 leading-relaxed font-light">
-                            Seri imalatın kalitesizliğine karşı; sağlam iskelet yapısı, konforlu sünger yenileme ve şık kumaş kaplama çözümleri sunuyoruz.
+                        <h3 class="text-2xl font-bold text-white mb-4">GÃ¼venilir UstalÄ±k, Kaliteli Hizmet</h3>
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                            Seri imalatÄ±n kalitesizliÄŸine karÅŸÄ±; saÄŸlam iskelet yapÄ±sÄ±, konforlu sÃ¼nger yenileme ve ÅŸÄ±k kumaÅŸ kaplama Ã§Ã¶zÃ¼mleri sunuyoruz.
                         </p>
                         
-                        <div class="bg-brand-navy p-4 rounded-xl border border-slate-700/80 text-left space-y-2">
-                            <div class="flex justify-between items-center text-xs text-slate-300">
-                                <span><i class="fa-solid fa-check text-green-400 mr-1.5"></i> Koltuk Döşeme & Yüz Değişimi</span>
-                                <span class="text-brand-gold">? Var</span>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center justify-between p-3 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                                <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Koltuk DÃ¶ÅŸeme & YÃ¼z DeÄŸiÅŸimi</span>
+                                <span class="text-xs bg-amber-500/20 text-amber-400 font-bold px-2.5 py-1 rounded-lg">UzmanlÄ±k</span>
                             </div>
-                            <div class="flex justify-between items-center text-xs text-slate-300">
-                                <span><i class="fa-solid fa-check text-green-400 mr-1.5"></i> Tamir & Tadilat Onarımı</span>
-                                <span class="text-brand-gold">? Var</span>
+                            <div class="flex items-center justify-between p-3 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                                <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Tamir & Tadilat OnarÄ±mÄ±</span>
+                                <span class="text-xs bg-amber-500/20 text-amber-400 font-bold px-2.5 py-1 rounded-lg">Titiz Ä°ÅŸÃ§ilik</span>
                             </div>
-                            <div class="flex justify-between items-center text-xs text-slate-300">
-                                <span><i class="fa-solid fa-check text-green-400 mr-1.5"></i> İskelet & Sünger Yenileme</span>
-                                <span class="text-brand-gold">? Var</span>
+                            <div class="flex items-center justify-between p-3 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                                <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Ä°skelet & SÃ¼nger Yenileme</span>
+                                <span class="text-xs bg-amber-500/20 text-amber-400 font-bold px-2.5 py-1 rounded-lg">Ã–zel Ã‡Ã¶zÃ¼m</span>
                             </div>
                         </div>
 
-                        <button onclick="openQuoteModal()" class="w-full bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider transition">
-                            Fotoğraf ile Danışın
+                        <button onclick="openWhatsAppModal()" class="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-3.5 px-4 rounded-xl transition text-center shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-xl"></i> DoÄŸrudan WhatsApp ile DanÄ±ÅŸÄ±n
                         </button>
                     </div>
                 </div>
@@ -218,64 +168,69 @@
         </div>
     </section>
 
-    <!-- 2. HAKKIMIZDA -->
+    <!-- HAKKIMIZDA / 25 YILLIK TECRÃœBE -->
     <section id="hakkimizda" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
                 <div class="lg:col-span-6 space-y-6">
-                    <span class="text-brand-gold font-bold text-sm uppercase tracking-widest">Çeyrek Asırlık Zanaat</span>
-                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight">
-                        Cesur Koltuk: 25 Yılı Aşkın Tecrübe ve Sultanbeyli'de Güven
+                    <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-100">Ã‡eyrek AsÄ±rlÄ±k Zanaat</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Cesur Koltuk: 25 YÄ±lÄ± AÅŸkÄ±n TecrÃ¼be ve Sultanbeyli'de GÃ¼ven
                     </h2>
-                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
-                        Atölyemizde 25 yılı aşkın süredir her mobilyayı evinizin en değerli konfor alanı olarak ele alıyoruz. Yıpranmış, çökmüş veya tarzı eskimiş koltuklarınızı usta ellerde yeniden şekillendiriyoruz.
+                    <p class="text-slate-600 leading-relaxed">
+                        AtÃ¶lyemizde 25 yÄ±lÄ± aÅŸkÄ±n sÃ¼redir her mobilyayÄ± evinizin en deÄŸerli konfor alanÄ± olarak ele alÄ±yoruz. YÄ±pranmÄ±ÅŸ, Ã§Ã¶kmÃ¼ÅŸ veya tarzÄ± eskimiÅŸ koltuklarÄ±nÄ±zÄ± usta ellerde yeniden ÅŸekillendiriyoruz.
                     </p>
-                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
-                        İskelet güçlendirmesinden sünger takviyesine, kumaş kaplamadan son dikiş detayına kadar her aşamada titizlikten ödün vermiyoruz.
+                    <p class="text-slate-600 leading-relaxed">
+                        Ä°skelet gÃ¼Ã§lendirmesinden sÃ¼nger takviyesine, kumaÅŸ kaplamadan son dikiÅŸ detayÄ±na kadar her aÅŸamada titizlikten Ã¶dÃ¼n vermiyoruz.
                     </p>
 
-                    <div class="grid grid-cols-2 gap-4 pt-2">
-                        <div class="p-4 bg-brand-cream rounded-xl border border-amber-900/10">
-                            <h4 class="font-bold text-brand-navy text-base mb-1"><i class="fa-solid fa-shield-halved text-brand-gold mr-2"></i>Garantili İşçilik</h4>
-                            <p class="text-xs text-slate-500">Atölyemizde işlem gören tüm mobilyalar güven altındadır.</p>
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2"><i class="fa-solid fa-medal text-amber-600"></i> Garantili Ä°ÅŸÃ§ilik</h4>
+                            <p class="text-xs text-slate-500">AtÃ¶lyemizde iÅŸlem gÃ¶ren tÃ¼m mobilyalar gÃ¼ven altÄ±ndadÄ±r.</p>
                         </div>
-                        <div class="p-4 bg-brand-cream rounded-xl border border-amber-900/10">
-                            <h4 class="font-bold text-brand-navy text-base mb-1"><i class="fa-solid fa-couch text-brand-gold mr-2"></i>Birebir Çözüm</h4>
-                            <p class="text-xs text-slate-500">Koltuğunuzun durumuna göre en doğru malzeme tercihi.</p>
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2"><i class="fa-solid fa-hands-holding-child text-amber-600"></i> Birebir Ã‡Ã¶zÃ¼m</h4>
+                            <p class="text-xs text-slate-500">KoltuÄŸunuzun durumuna gÃ¶re en doÄŸru malzeme tercihi.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="lg:col-span-6">
-                    <div class="bg-brand-navy p-8 rounded-3xl text-white space-y-6 border border-brand-gold/30 gold-border-glow">
-                        <div class="flex items-center gap-4 border-b border-slate-700 pb-6">
-                            <div class="text-5xl font-cinzel font-bold text-brand-gold">25+</div>
-                            <div>
-                                <h4 class="font-bold text-lg">Yıllık Tecrübe</h4>
-                                <p class="text-xs text-slate-300">Geleneksel ustalık anlayışı ile modern tasarımlar.</p>
+                    <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 sm:p-10 rounded-3xl shadow-xl relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl"></div>
+                        <div class="relative z-10 space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-16 h-16 bg-amber-500 text-slate-950 rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg">
+                                    25+
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">YÄ±llÄ±k TecrÃ¼be</h4>
+                                    <p class="text-slate-400 text-sm">Geleneksel ustalÄ±k anlayÄ±ÅŸÄ± ile modern tasarÄ±mlar.</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
-                                <p class="text-xs text-slate-200"><strong>Fotoğrafla Şeffaf Bilgilendirme:</strong> İhtiyacınız olan işlem net şekilde anlatılır.</p>
+                            <div class="space-y-3 pt-2 text-sm text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                    <p><strong>FotoÄŸrafla Åeffaf Bilgilendirme:</strong> Ä°htiyacÄ±nÄ±z olan iÅŸlem net ÅŸekilde anlatÄ±lÄ±r.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                    <p><strong>Zengin KumaÅŸ SeÃ§enekleri:</strong> Leke tutmayan ve silinebilir modern dokumalar.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                    <p><strong>Sultanbeyli Merkezli Hizmet:</strong> BÃ¶lge genelinde hÄ±zlÄ± ve gÃ¼venilir teslimat.</p>
+                                </div>
                             </div>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
-                                <p class="text-xs text-slate-200"><strong>Zengin Kumaş Seçenekleri:</strong> Leke tutmayan ve silinebilir modern dokumalar.</p>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
-                                <p class="text-xs text-slate-200"><strong>Sultanbeyli Merkezli Hizmet:</strong> Bölge genelinde hızlı ve güvenilir teslimat.</p>
-                            </div>
-                        </div>
 
-                        <div class="pt-2">
-                            <button onclick="openQuoteModal()" class="w-full bg-green-600 hover:bg-green-500 text-white py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2">
-                                <i class="fa-brands fa-whatsapp text-lg"></i> Detaylı Bilgi İçin İletişime Geçin
-                            </button>
+                            <div class="pt-4">
+                                <a href="tel:05356529009" class="block text-center bg-amber-600 hover:bg-amber-500 text-white font-bold py-3.5 px-6 rounded-xl transition shadow-lg shadow-amber-600/30">
+                                    Usta Ä°le GÃ¶rÃ¼ÅŸÃ¼n: 0535 652 90 09
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -284,257 +239,206 @@
         </div>
     </section>
 
-    <!-- 3. HİZMETLERİMİZ -->
-    <section id="hizmetlerimiz" class="py-20 bg-brand-cream border-t border-b border-amber-900/10">
+    <!-- HÄ°ZMETLERÄ°MÄ°Z -->
+    <section id="hizmetlerimiz" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-gold font-bold text-sm uppercase tracking-widest">Neler Yapıyoruz?</span>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mt-2">Koltuk Döşeme, Tamir & Yenileme Hizmetleri</h2>
-                <p class="text-slate-600 mt-3 text-sm sm:text-base">Ev ve iş yerlerinizdeki tüm oturma grupları için profesyonel çözümler sunuyoruz.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">Neler YapÄ±yoruz?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Koltuk DÃ¶ÅŸeme, Tamir & Yenileme Hizmetleri</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Ev ve iÅŸ yerlerinizdeki tÃ¼m oturma gruplarÄ± iÃ§in profesyonel Ã§Ã¶zÃ¼mler sunuyoruz.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
                 <!-- Hizmet 1 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-900/10 hover:shadow-md transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-amber-100 text-brand-gold rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-brand-navy group-hover:text-brand-gold transition duration-300">
-                            <i class="fa-solid fa-scissors"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-brand-navy mb-2">Koltuk Döşeme</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Koltuk takımlarınızı, köşe gruplarınızı ve berjerlerinizi dilediğiniz renk ve kumaş dokusuyla sıfırdan kaplıyoruz.
-                        </p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-chair"></i>
                     </div>
-                    <button onclick="openQuoteModal()" class="mt-6 text-xs font-bold text-brand-gold hover:text-brand-navy transition flex items-center gap-1">
-                        Teklif Al <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Koltuk DÃ¶ÅŸeme</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Koltuk takÄ±mlarÄ±nÄ±zÄ±, kÃ¶ÅŸe gruplarÄ±nÄ±zÄ± ve berjerlerinizi dilediÄŸiniz renk ve kumaÅŸ dokusuyla sÄ±fÄ±rdan kaplÄ±yoruz.
+                    </p>
                 </div>
 
                 <!-- Hizmet 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-900/10 hover:shadow-md transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-amber-100 text-brand-gold rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-brand-navy group-hover:text-brand-gold transition duration-300">
-                            <i class="fa-solid fa-hammer"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-brand-navy mb-2">Tamir ve Tadilat</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Gıcırtı yapan, kırılan veya sağlamlığını yitiren ahşap iskeletleri ve mekanizmaları profesyonelce onarıyoruz.
-                        </p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-hammer"></i>
                     </div>
-                    <button onclick="openQuoteModal()" class="mt-6 text-xs font-bold text-brand-gold hover:text-brand-navy transition flex items-center gap-1">
-                        Teklif Al <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Tamir ve Tadilat</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        GÄ±cÄ±rtÄ± yapan, kÄ±rÄ±lan veya saÄŸlamlÄ±ÄŸÄ±nÄ± yitiren ahÅŸap iskeletleri ve mekanizmalarÄ± profesyonelce onarÄ±yoruz.
+                    </p>
                 </div>
 
                 <!-- Hizmet 3 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-900/10 hover:shadow-md transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-amber-100 text-brand-gold rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-brand-navy group-hover:text-brand-gold transition duration-300">
-                            <i class="fa-solid fa-layer-group"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-brand-navy mb-2">İskelet & Sünger Yenileme</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Formunu yitirmiş, çökmüş oturum minderlerini koltuğunuzun ihtiyacına en uygun dayanıklı süngerlerle yeniliyoruz.
-                        </p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-layer-group"></i>
                     </div>
-                    <button onclick="openQuoteModal()" class="mt-6 text-xs font-bold text-brand-gold hover:text-brand-navy transition flex items-center gap-1">
-                        Teklif Al <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Ä°skelet & SÃ¼nger Yenileme</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Formunu yitirmiÅŸ, Ã§Ã¶kmÃ¼ÅŸ oturum minderlerini koltuÄŸunuzun ihtiyacÄ±na en uygun dayanÄ±klÄ± sÃ¼ngerlerle yeniliyoruz.
+                    </p>
                 </div>
 
                 <!-- Hizmet 4 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-900/10 hover:shadow-md transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-amber-100 text-brand-gold rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-brand-navy group-hover:text-brand-gold transition duration-300">
-                            <i class="fa-solid fa-palette"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-brand-navy mb-2">Kumaş Değişimi</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Eski moda ya da lekelenmiş kumaşlarınızı evinizin dekorasyonuna uyum sağlayacak modern dokuma kumaşlarla değiştiriyoruz.
-                        </p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </div>
-                    <button onclick="openQuoteModal()" class="mt-6 text-xs font-bold text-brand-gold hover:text-brand-navy transition flex items-center gap-1">
-                        Teklif Al <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">KumaÅŸ DeÄŸiÅŸimi</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Eski moda ya da lekelenmiÅŸ kumaÅŸlarÄ±nÄ±zÄ± evinizin dekorasyonuna uyum saÄŸlayacak modern dokuma kumaÅŸlarla deÄŸiÅŸtiriyoruz.
+                    </p>
                 </div>
 
             </div>
 
             <!-- Bilgilendirme Kutusu -->
-            <div class="mt-12 bg-brand-navy text-white p-6 sm:p-8 rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 border border-brand-gold/30">
-                <div class="space-y-1 text-center md:text-left">
-                    <h4 class="text-lg font-serif font-bold text-brand-gold">Neden Sitemizde Fiyat Yer Almıyor?</h4>
-                    <p class="text-xs sm:text-sm text-slate-300">
-                        Sektörümüzde her koltuğun boyutu, hasar durumu ve kumaş tercihi farklıdır. Fotoğraf göndererek net bilgi alabilirsiniz.
-                    </p>
+            <div class="mt-12 bg-amber-50 border border-amber-200 p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-center sm:text-left">
+                    <h4 class="font-bold text-slate-900 mb-1">Neden Sitemizde Fiyat Yer AlmÄ±yor?</h4>
+                    <p class="text-sm text-slate-600">SektÃ¶rÃ¼mÃ¼zde her koltuÄŸun boyutu, hasar durumu ve kumaÅŸ tercihi farklÄ±dÄ±r. FotoÄŸraf gÃ¶ndererek net bilgi alabilirsiniz.</p>
                 </div>
-                <button onclick="openQuoteModal()" class="bg-brand-gold hover:bg-brand-goldHover text-brand-navy px-6 py-3.5 rounded-xl font-bold text-xs whitespace-nowrap transition shadow-md">
-                    <i class="fa-solid fa-camera mr-2"></i> Fotoğrafla Fiyat Al
+                <button onclick="openWhatsAppModal()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-6 py-3 rounded-xl whitespace-nowrap transition shadow-md">
+                    FotoÄŸraf GÃ¶nder & Bilgi Al
                 </button>
             </div>
-
         </div>
     </section>
 
-    <!-- 4. ÇALIŞMA SÜRECİ -->
-    <section id="surec" class="py-20 bg-brand-navy text-white">
+    <!-- Ã‡ALIÅMA SÃœRECÄ° -->
+    <section id="surec" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-gold font-bold text-sm uppercase tracking-widest">Kolay ve Şeffaf Adımlar</span>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2">Atölye Sürecimiz Nasıl İşler?</h2>
-                <p class="text-slate-300 mt-3 text-sm sm:text-base">Mobilyanızı yeniletmek Cesur Koltuk ile oldukça pratiktir.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-100">Kolay ve Åeffaf AdÄ±mlar</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">AtÃ¶lye SÃ¼recimiz NasÄ±l Ä°ÅŸler?</h2>
+                <p class="text-slate-600 text-base sm:text-lg">MobilyanÄ±zÄ± yeniletmek Cesur Koltuk ile oldukÃ§a pratiktir.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Adım 1 -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-700/80 text-center relative">
-                    <div class="w-12 h-12 bg-brand-gold text-brand-navy rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4 shadow-lg">1</div>
-                    <h4 class="font-bold text-base text-white mb-2">Fotoğraf Gönderin</h4>
-                    <p class="text-xs text-slate-300 leading-relaxed">Yenilenmesini istediğiniz koltuğunuzun fotoğraflarını WhatsApp hattımızdan iletin.</p>
+                <!-- AdÄ±m 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-lg mb-6 shadow-md shadow-amber-600/30">1</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">FotoÄŸraf GÃ¶nderin</h4>
+                    <p class="text-slate-600 text-sm">Yenilenmesini istediÄŸiniz koltuÄŸunuzun fotoÄŸraflarÄ±nÄ± WhatsApp hattÄ±mÄ±zdan iletin.</p>
                 </div>
 
-                <!-- Adım 2 -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-700/80 text-center relative">
-                    <div class="w-12 h-12 bg-brand-gold text-brand-navy rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4 shadow-lg">2</div>
-                    <h4 class="font-bold text-base text-white mb-2">Detay & Bilgi</h4>
-                    <p class="text-xs text-slate-300 leading-relaxed">Gerekli tamir, sünger ve kumaş alternatifleri hakkında usta görüşü alalım.</p>
+                <!-- AdÄ±m 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-lg mb-6 shadow-md shadow-amber-600/30">2</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Detay & Bilgi</h4>
+                    <p class="text-slate-600 text-sm">Gerekli tamir, sÃ¼nger ve kumaÅŸ alternatifleri hakkÄ±nda usta gÃ¶rÃ¼ÅŸÃ¼ alalÄ±m.</p>
                 </div>
 
-                <!-- Adım 3 -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-700/80 text-center relative">
-                    <div class="w-12 h-12 bg-brand-gold text-brand-navy rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4 shadow-lg">3</div>
-                    <h4 class="font-bold text-base text-white mb-2">Evden Ücretsiz Alım</h4>
-                    <p class="text-xs text-slate-300 leading-relaxed">Belirlenen gün ve saatte mobilyanızı adresinizden özenle teslim alıyoruz.</p>
+                <!-- AdÄ±m 3 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-lg mb-6 shadow-md shadow-amber-600/30">3</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Evden Ãœcretsiz AlÄ±m</h4>
+                    <p class="text-slate-600 text-sm">Belirlenen gÃ¼n ve saatte mobilyanÄ±zÄ± adresinizden Ã¶zenle teslim alÄ±yoruz.</p>
                 </div>
 
-                <!-- Adım 4 -->
-                <div class="bg-brand-dark p-6 rounded-2xl border border-slate-700/80 text-center relative">
-                    <div class="w-12 h-12 bg-brand-gold text-brand-navy rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4 shadow-lg">4</div>
-                    <h4 class="font-bold text-base text-white mb-2">Yenilenmiş Teslimat</h4>
-                    <p class="text-xs text-slate-300 leading-relaxed">Atölyemizde özenle yenilenen mobilyanızı evinize getirip kuruyoruz.</p>
+                <!-- AdÄ±m 4 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-lg mb-6 shadow-md shadow-amber-600/30">4</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">YenilenmiÅŸ Teslimat</h4>
+                    <p class="text-slate-600 text-sm">AtÃ¶lyemizde Ã¶zenle yenilenen mobilyanÄ±zÄ± evinize getirip kuruyoruz.</p>
                 </div>
 
             </div>
-
         </div>
     </section>
 
-    <!-- 5. GALERİ YER TUTUCULARI -->
-    <section id="galeri" class="py-20 bg-white">
+    <!-- GALERÄ° (YENÄ° Ã‡ALIÅMALAR YAKINDA) -->
+    <section id="galeri" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-brand-gold font-bold text-sm uppercase tracking-widest">Ustalık Örnekleri</span>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mt-2">Atölye Çalışmalarımız</h2>
-                <p class="text-slate-600 mt-3 text-sm sm:text-base">Tamamlanan projelerimize ait görsel örnekleri yakında bu alanda sergilenecektir.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">UstalÄ±k Ã–rnekleri</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">AtÃ¶lye Ã‡alÄ±ÅŸmalarÄ±mÄ±z</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Tamamlanan projelerimize ait gÃ¶rsel Ã¶rnekleri yakÄ±nda bu alanda sergilenecektir.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-brand-cream border-2 border-dashed border-amber-900/20 rounded-2xl p-8 text-center flex flex-col items-center justify-center min-h-[260px]">
-                    <div class="w-16 h-16 bg-amber-100 text-brand-gold rounded-full flex items-center justify-center text-2xl mb-3">
+            <div class="grid sm:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl text-center border border-slate-200 space-y-3">
+                    <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto text-2xl">
                         <i class="fa-solid fa-image"></i>
                     </div>
-                    <h4 class="font-bold text-brand-navy text-base">Koltuk Takımı Yenileme</h4>
-                    <p class="text-xs text-slate-500 mt-1">Görseller Yakında Eklenecektir</p>
+                    <h4 class="font-bold text-slate-800">Koltuk TakÄ±mÄ± Yenileme</h4>
+                    <p class="text-xs text-slate-500">GÃ¶rseller YakÄ±nda Eklenecektir</p>
                 </div>
 
-                <div class="bg-brand-cream border-2 border-dashed border-amber-900/20 rounded-2xl p-8 text-center flex flex-col items-center justify-center min-h-[260px]">
-                    <div class="w-16 h-16 bg-amber-100 text-brand-gold rounded-full flex items-center justify-center text-2xl mb-3">
+                <div class="bg-white p-8 rounded-3xl text-center border border-slate-200 space-y-3">
+                    <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto text-2xl">
                         <i class="fa-solid fa-image"></i>
                     </div>
-                    <h4 class="font-bold text-brand-navy text-base">Berjer & Sandalye Döşeme</h4>
-                    <p class="text-xs text-slate-500 mt-1">Görseller Yakında Eklenecektir</p>
+                    <h4 class="font-bold text-slate-800">Berjer & Sandalye DÃ¶ÅŸeme</h4>
+                    <p class="text-xs text-slate-500">GÃ¶rseller YakÄ±nda Eklenecektir</p>
                 </div>
 
-                <div class="bg-brand-cream border-2 border-dashed border-amber-900/20 rounded-2xl p-8 text-center flex flex-col items-center justify-center min-h-[260px]">
-                    <div class="w-16 h-16 bg-amber-100 text-brand-gold rounded-full flex items-center justify-center text-2xl mb-3">
+                <div class="bg-white p-8 rounded-3xl text-center border border-slate-200 space-y-3">
+                    <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto text-2xl">
                         <i class="fa-solid fa-image"></i>
                     </div>
-                    <h4 class="font-bold text-brand-navy text-base">Köşe Grubu Onarımı</h4>
-                    <p class="text-xs text-slate-500 mt-1">Görseller Yakında Eklenecektir</p>
+                    <h4 class="font-bold text-slate-800">KÃ¶ÅŸe Grubu OnarÄ±mÄ±</h4>
+                    <p class="text-xs text-slate-500">GÃ¶rseller YakÄ±nda Eklenecektir</p>
                 </div>
-
             </div>
-
         </div>
     </section>
 
-    <!-- 6. İLETİŞİM & LOKASYON -->
-    <section id="iletisim" class="py-20 bg-brand-cream border-t border-amber-900/10">
+    <!-- Ä°LETÄ°ÅÄ°M -->
+    <section id="iletisim" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-16 shadow-2xl grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Bilgiler -->
-                <div class="lg:col-span-5 space-y-6">
-                    <div>
-                        <span class="text-brand-gold font-bold text-sm uppercase tracking-widest">İletişim & Konum</span>
-                        <h2 class="text-3xl font-serif font-bold text-brand-navy mt-1">Atölyemize Ulaşın</h2>
-                        <p class="text-slate-600 text-sm mt-2">Sultanbeyli'deki atölyemizi ziyaret edebilir veya WhatsApp hattımızdan fotoğraf gönderip anında bilgi alabilirsiniz.</p>
-                    </div>
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-amber-500 font-bold tracking-wider uppercase text-sm bg-amber-500/10 px-3 py-1 rounded-lg border border-amber-500/20">Ä°letiÅŸim & Konum</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">AtÃ¶lyemize UlaÅŸÄ±n</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Sultanbeyli'deki atÃ¶lyemizi ziyaret edebilir veya WhatsApp hattÄ±mÄ±zdan fotoÄŸraf gÃ¶nderip anÄ±nda bilgi alabilirsiniz.
+                    </p>
 
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-amber-900/10 shadow-sm">
-                            <div class="text-brand-gold text-xl mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-600/20 text-amber-500 rounded-xl flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-location-dot"></i></div>
                             <div>
-                                <h5 class="font-bold text-brand-navy text-sm">Atölye Adresimiz</h5>
-                                <p class="text-xs text-slate-600 mt-0.5">Sultanbeyli / İstanbul</p>
+                                <h5 class="font-bold text-white">AtÃ¶lye Adresimiz</h5>
+                                <p class="text-slate-300 text-sm">Sultanbeyli / Ä°stanbul</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-amber-900/10 shadow-sm">
-                            <div class="text-brand-gold text-xl mt-1"><i class="fa-solid fa-phone"></i></div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-600/20 text-amber-500 rounded-xl flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-phone"></i></div>
                             <div>
-                                <h5 class="font-bold text-brand-navy text-sm">İletişim Numarası</h5>
-                                <p class="text-xs text-slate-600 mt-0.5"><strong>Telefon / WhatsApp:</strong> 0535 652 90 09</p>
+                                <h5 class="font-bold text-white">Ä°letiÅŸim NumarasÄ±</h5>
+                                <p class="text-slate-300 text-sm"><strong>Telefon / WhatsApp:</strong> 0535 652 90 09</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-amber-900/10 shadow-sm">
-                            <div class="text-brand-gold text-xl mt-1"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-600/20 text-amber-500 rounded-xl flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-envelope"></i></div>
                             <div>
-                                <h5 class="font-bold text-brand-navy text-sm">E-Posta Adresimiz</h5>
-                                <p class="text-xs text-slate-600 mt-0.5"><a href="mailto:cesurkoltuk@proton.me" class="text-brand-gold hover:underline">cesurkoltuk@proton.me</a></p>
+                                <h5 class="font-bold text-white">E-Posta Adresimiz</h5>
+                                <p class="text-slate-300 text-sm"><a href="mailto:cesurkoltuk@proton.me" class="text-amber-400 hover:underline">cesurkoltuk@proton.me</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Form -->
-                <div class="lg:col-span-7 bg-white p-8 rounded-3xl shadow-sm border border-amber-900/10">
-                    <h3 class="text-xl font-bold text-brand-navy mb-2">Bilgi Alın / Sizi Arayalım</h3>
-                    <p class="text-xs text-slate-500 mb-6">Bilgilerinizi bırakın, en kısa sürede sizinle iletişime geçip sorularınızı yanıtlayalım.</p>
-
-                    <form id="contact-form" class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-medium text-slate-700 mb-1">Adınız Soyadınız</label>
-                                <input type="text" required class="w-full bg-brand-cream border border-gray-300 rounded-xl p-3 text-sm focus:outline-none focus:border-brand-gold" placeholder="Adınız">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-medium text-slate-700 mb-1">Telefon Numarası</label>
-                                <input type="tel" required class="w-full bg-brand-cream border border-gray-300 rounded-xl p-3 text-sm focus:outline-none focus:border-brand-gold" placeholder="0535 652 90 09">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-medium text-slate-700 mb-1">İlçe / Semt</label>
-                            <input type="text" class="w-full bg-brand-cream border border-gray-300 rounded-xl p-3 text-sm focus:outline-none focus:border-brand-gold" placeholder="Sultanbeyli, Pendik vb.">
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-medium text-slate-700 mb-1">Mesajınız / Koltuk Bilgisi</label>
-                            <textarea rows="3" class="w-full bg-brand-cream border border-gray-300 rounded-xl p-3 text-sm focus:outline-none focus:border-brand-gold" placeholder="Koltuğumun kumaşı değişecek ve süngerleri yenilenecek..."></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full bg-brand-navy hover:bg-brand-dark text-white py-3.5 rounded-xl font-semibold text-sm transition shadow-md flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-paper-plane text-brand-gold"></i> Talebi Gönder
-                        </button>
-                    </form>
+                <div class="lg:col-span-6 bg-slate-800 p-8 rounded-2xl border border-slate-700 space-y-6">
+                    <h3 class="text-xl font-bold text-white">HÄ±zlÄ± Ä°letiÅŸim HattÄ±</h3>
+                    <p class="text-slate-300 text-sm">
+                        KoltuÄŸunuzun fotoÄŸrafÄ±nÄ± gÃ¶ndererek en hÄ±zlÄ± ÅŸekilde usta gÃ¶rÃ¼ÅŸÃ¼ ve fiyat teklifi alabilirsiniz.
+                    </p>
+                    <button onclick="openWhatsAppModal()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp ile FotoÄŸraf GÃ¶nder
+                    </button>
+                    <a href="tel:05356529009" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                        <i class="fa-solid fa-phone"></i> 0535 652 90 09 NumarasÄ±nÄ± Ara
+                    </a>
                 </div>
 
             </div>
@@ -542,115 +446,89 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-brand-navy text-white pt-12 pb-24 lg:pb-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-slate-800 pb-8">
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-brand-gold text-brand-navy rounded-lg flex items-center justify-center font-bold">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <span class="font-cinzel font-bold text-xl tracking-wider">CESUR KOLTUK</span>
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-amber-600 rounded-lg flex items-center justify-center text-white font-bold">
+                    <i class="fa-solid fa-couch text-sm"></i>
                 </div>
-                <div class="text-xs text-slate-400 text-center md:text-right space-y-1">
-                    <p>Sultanbeyli / İstanbul • Tel: 0535 652 90 09 • E-posta: cesurkoltuk@proton.me</p>
-                    <p>© 2026 Cesur Koltuk Tamir & Döşeme Atölyesi. Tüm Hakları Saklıdır.</p>
-                </div>
+                <span class="text-white font-bold tracking-wider">CESUR KOLTUK</span>
+            </div>
+            <div class="text-xs space-y-1">
+                <p>Sultanbeyli / Ä°stanbul â€¢ Tel: 0535 652 90 09 â€¢ E-posta: cesurkoltuk@proton.me</p>
+                <p>&copy; 2026 Cesur Koltuk Tamir & DÃ¶ÅŸeme AtÃ¶lyesi. TÃ¼m HaklarÄ± SaklÄ±dÄ±r.</p>
             </div>
         </div>
     </footer>
 
-    <!-- MOBİL SABİT İLETİŞİM BARI -->
-    <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-gray-200 p-3 z-50 flex items-center justify-around md:hidden shadow-lg">
-        <a href="tel:+905356529009" class="flex-1 mr-2 bg-brand-navy text-white py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm">
-            <i class="fa-solid fa-phone text-brand-gold text-sm"></i> Hemen Ara
+    <!-- SABÄ°T MOBÄ°L ALT ARAMA Ã‡UBUÄU -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 p-3 sm:hidden flex gap-3">
+        <a href="tel:05356529009" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 rounded-xl text-center flex items-center justify-center gap-2 text-sm shadow-lg">
+            <i class="fa-solid fa-phone"></i> Hemen Ara
         </a>
-        <button onclick="openQuoteModal()" class="flex-1 bg-green-600 text-white py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm">
-            <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Teklif
+        <button onclick="openWhatsAppModal()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl text-center flex items-center justify-center gap-2 text-sm shadow-lg">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
         </button>
     </div>
 
-    <!-- İNTERAKTİF FOTOĞRAFLI TEKLİF MODAL -->
-    <div id="quote-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border border-brand-gold/30">
-            
-            <button onclick="closeQuoteModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition">
+    <!-- WHATSAPP / FOTOÄRAF TEKLÄ°F MODALI -->
+    <div id="wa-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 space-y-6 relative shadow-2xl animate-in fade-in zoom-in duration-200">
+            <button onclick="closeWhatsAppModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center transition">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
-            <div class="text-center space-y-2 mb-6">
-                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto">
+            <div class="text-center space-y-2">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto text-3xl shadow-inner">
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
-                <h3 class="text-xl font-serif font-bold text-brand-navy">Fotoğrafla Hızlı Teklif Alın</h3>
-                <p class="text-xs text-slate-500">
-                    Koltuğunuzun fotoğrafını WhatsApp üzerinden gönderin, ustamız hemen inceleyip yardımcı olsun.
+                <h3 class="text-2xl font-bold text-slate-900">FotoÄŸrafla HÄ±zlÄ± Teklif AlÄ±n</h3>
+                <p class="text-slate-600 text-sm">
+                    KoltuÄŸunuzun fotoÄŸrafÄ±nÄ± WhatsApp Ã¼zerinden gÃ¶nderin, ustamÄ±z hemen inceleyip yardÄ±mcÄ± olsun.
                 </p>
             </div>
 
-            <div class="space-y-4">
-                <a href="https://wa.me/905356529009?text=Merhaba,%20koltugumun%20fotografini%20gonderip%20tamir/doseme%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" class="w-full bg-green-600 hover:bg-green-500 text-white py-4 rounded-xl font-bold text-sm transition flex items-center justify-center gap-3 shadow-lg shadow-green-600/20">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp'ı Aç ve Fotoğraf Gönder
+            <div class="space-y-3 pt-2">
+                <a href="https://wa.me/905356529009?text=Merhaba,%20koltugumun%20fotografini%20gonderip%20tamir/doseme%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-emerald-600/30 flex items-center justify-center gap-3 transition text-base">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp'Ä± AÃ§ ve FotoÄŸraf GÃ¶nder
                 </a>
 
                 <div class="relative flex py-2 items-center">
-                    <div class="flex-grow border-t border-gray-200"></div>
-                    <span class="flex-shrink mx-4 text-xs text-slate-400 font-medium">veya doğrudan arayın</span>
-                    <div class="flex-grow border-t border-gray-200"></div>
+                    <div class="flex-grow border-t border-slate-200"></div>
+                    <span class="flex-shrink mx-4 text-slate-400 text-xs uppercase font-semibold">veya doÄŸrudan arayÄ±n</span>
+                    <div class="flex-grow border-t border-slate-200"></div>
                 </div>
 
-                <a href="tel:+905356529009" class="w-full bg-brand-navy hover:bg-brand-dark text-white py-3.5 rounded-xl font-bold text-xs transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-phone text-brand-gold"></i> 0535 652 90 09 Numarasını Ara
+                <a href="tel:05356529009" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition text-base">
+                    <i class="fa-solid fa-phone text-amber-500"></i> 0535 652 90 09 NumarasÄ±nÄ± Ara
                 </a>
             </div>
-
         </div>
     </div>
 
     <!-- JAVASCRIPT -->
     <script>
-        // Mobil Menü Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        const waModal = document.getElementById('wa-modal');
 
-        mobileMenuBtn.addEventListener('click', () => {
+        menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Modal Fonksiyonları
-        function openQuoteModal() {
-            document.getElementById('quote-modal').classList.remove('hidden');
+        function openWhatsAppModal() {
+            waModal.classList.remove('hidden');
         }
 
-        function closeQuoteModal() {
-            document.getElementById('quote-modal').classList.add('hidden');
+        function closeWhatsAppModal() {
+            waModal.classList.add('hidden');
         }
 
-        document.getElementById('quote-modal').addEventListener('click', (e) => {
-            if (e.target === document.getElementById('quote-modal')) {
-                closeQuoteModal();
+        waModal.addEventListener('click', (e) => {
+            if (e.target === waModal) {
+                closeWhatsAppModal();
             }
         });
-
-        // Form Gönderim (alert yerine şık bir bilgilendirme)
-        const contactForm = document.getElementById('contact-form');
-        if(contactForm) {
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                // Custom mesaj kutusu yerine form başarı mesajı
-                const btn = contactForm.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i> Talebiniz Alındı!';
-                btn.classList.remove('bg-brand-navy', 'hover:bg-brand-dark');
-                btn.classList.add('bg-green-600');
-                
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.classList.remove('bg-green-600');
-                    btn.classList.add('bg-brand-navy', 'hover:bg-brand-dark');
-                    contactForm.reset();
-                }, 3000);
-            });
-        }
     </script>
 </body>
 </html>
