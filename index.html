@@ -1,30 +1,51 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sultanbeyli Koltuk Döşeme ve Tamir | Cesur Koltuk İstanbul</title>
-    <meta name="description" content="İstanbul Sultanbeyli merkezli Cesur Koltuk; 25 yılı aşkın zanaat tecrübesiyle koltuk döşeme, tamir, iskelet onarımı ve kumaş değişimi hizmeti sunar. Adresten ücretsiz alım.">
+    
+    <!-- SEO METATAGLARI -->
+    <meta name="description" content="İstanbul Sultanbeyli merkezli Cesur Koltuk; 25 yılı aşkın zanaat tecrübesiyle koltuk döşeme, tamir, iskelet onarımı ve kumaş değişimi hizmeti sunar. Adresten ücretsiz alım desteği.">
     <meta name="keywords" content="sultanbeyli koltuk döşeme, istanbul koltuk tamiri, koltuk yüzü değişimi, koltuk süngeri yenileme, koltuk kaplama usta, cesur koltuk">
+    <meta name="author" content="Cesur Koltuk Tamir & Döşeme Atölyesi">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://cesurkoltuk.com/">
+
+    <!-- YEREL SEO TAGLARI -->
+    <meta name="geo.region" content="TR-34">
+    <meta name="geo.placename" content="Sultanbeyli, İstanbul">
+    <meta name="geo.position" content="40.9678;29.2631">
+    <meta name="ICBM" content="40.9678, 29.2631">
+
+    <!-- OPEN GRAPH / SOSYAL MEDYA -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cesurkoltuk.com/">
+    <meta property="og:title" content="Cesur Koltuk | Sultanbeyli Koltuk Döşeme & Tamir Atölyesi">
+    <meta property="og:description" content="25 yıllık tecrübe ile koltuk döşeme, tamir ve sünger yenileme hizmeti. Adresten ücretsiz alım ve teslimat. Fotoğraf gönderin, hemen fiyat alın.">
+    <meta property="og:image" content="https://cesurkoltuk.com/1%20(1).jpg">
+    <meta property="og:locale" content="tr_TR">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         
-        /* Kaydırma çubuğunu gizleme */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        section { scroll-margin-top: 5rem; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
 
     <!-- HEADER / MENÜ -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="#hero" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 bg-amber-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-amber-600/30 group-hover:bg-amber-700 transition">
+                    <div class="w-11 h-11 bg-amber-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-amber-600/30 group-hover:bg-amber-700 transition-all duration-300 group-hover:scale-105">
                         <i class="fa-solid fa-couch text-xl"></i>
                     </div>
                     <div>
@@ -34,29 +55,29 @@
                 </a>
 
                 <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
-                    <a href="#hero" class="hover:text-amber-600 transition">Ana Sayfa</a>
-                    <a href="#hakkimizda" class="hover:text-amber-600 transition">Atölyemiz</a>
-                    <a href="#hizmetlerimiz" class="hover:text-amber-600 transition">Hizmetler</a>
-                    <a href="#galeri" class="hover:text-amber-600 transition">İşlerimiz</a>
-                    <a href="#tavsiyeler" class="hover:text-amber-600 transition">Usta Tavsiyeleri</a>
-                    <a href="#surec" class="hover:text-amber-600 transition">Süreç</a>
-                    <a href="#iletisim" class="hover:text-amber-600 transition">İletişim</a>
+                    <a href="#hero" class="hover:text-amber-600 transition-colors duration-200">Ana Sayfa</a>
+                    <a href="#hakkimizda" class="hover:text-amber-600 transition-colors duration-200">Atölyemiz</a>
+                    <a href="#hizmetlerimiz" class="hover:text-amber-600 transition-colors duration-200">Hizmetler</a>
+                    <a href="#galeri" class="hover:text-amber-600 transition-colors duration-200">İşlerimiz</a>
+                    <a href="#tavsiyeler" class="hover:text-amber-600 transition-colors duration-200">Usta Tavsiyeleri</a>
+                    <a href="#surec" class="hover:text-amber-600 transition-colors duration-200">Süreç</a>
+                    <a href="#iletisim" class="hover:text-amber-600 transition-colors duration-200">İletişim</a>
                 </nav>
 
                 <div class="hidden lg:flex items-center gap-3">
-                    <a href="tel:05356529009" class="flex items-center gap-2.5 bg-slate-100 hover:bg-slate-200 text-slate-900 px-4 py-2.5 rounded-xl font-bold text-sm transition">
+                    <a href="tel:05356529009" class="flex items-center gap-2.5 bg-slate-100 hover:bg-slate-200 text-slate-900 px-4 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 hover:shadow-md">
                         <i class="fa-solid fa-phone-volume text-amber-600"></i>
                         <span>0535 652 90 09</span>
                     </a>
                 </div>
 
-                <button id="menu-btn" class="md:hidden text-slate-700 hover:text-amber-600 text-2xl focus:outline-none">
+                <button id="menu-btn" class="md:hidden text-slate-700 hover:text-amber-600 text-2xl focus:outline-none transition-colors" aria-label="Menüyü Aç/Kapat">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-4 space-y-3">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-4 space-y-3 transition-all duration-300">
             <a href="#hero" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">Ana Sayfa</a>
             <a href="#hakkimizda" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">Atölyemiz</a>
             <a href="#hizmetlerimiz" class="block py-2 text-slate-700 hover:text-amber-600 font-medium border-b border-slate-50">Hizmetlerimiz</a>
@@ -93,21 +114,18 @@
                     </p>
 
                     <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                        <button onclick="openWhatsAppModal()" class="flex items-center justify-center gap-3 bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-amber-600/30 transition transform hover:-translate-y-0.5 text-base">
+                        <button onclick="openWhatsAppModal()" class="flex items-center justify-center gap-3 bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-amber-600/30 transition-all duration-300 transform hover:-translate-y-1 text-base">
                             <i class="fa-brands fa-whatsapp text-2xl"></i> Fotoğraf Gönder, Fiyat Al
                         </button>
-                        <a href="tel:05356529009" class="flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-2xl border border-slate-700 transition text-base">
+                        <a href="tel:05356529009" class="flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-2xl border border-slate-700 transition-all duration-300 transform hover:-translate-y-1 text-base">
                             <i class="fa-solid fa-phone text-amber-500"></i> 0535 652 90 09
                         </a>
                     </div>
-                    <p class="text-xs text-slate-400 italic">
-                        * Her mobilyanın yapısı ve ihtiyacı özeldir; fotoğraf ileterek hızlıca ön bilgi alabilirsiniz.
-                    </p>
                 </div>
 
                 <!-- ÖZET KART -->
                 <div class="lg:col-span-5">
-                    <div class="bg-slate-800/90 border border-slate-700 p-8 rounded-3xl shadow-2xl relative backdrop-blur-sm space-y-6">
+                    <div class="bg-slate-800/90 border border-slate-700 p-8 rounded-3xl shadow-2xl relative backdrop-blur-sm space-y-6 hover:border-amber-500/50 transition-all duration-300">
                         <h3 class="text-xl font-bold text-white border-b border-slate-700 pb-3 flex items-center gap-2">
                             <i class="fa-solid fa-award text-amber-500"></i> Neden Cesur Koltuk?
                         </h3>
@@ -151,20 +169,20 @@
                     </p>
                 </div>
 
-                <div class="lg:col-span-5 bg-slate-50 p-8 rounded-3xl border border-slate-200 space-y-4">
+                <div class="lg:col-span-5 bg-slate-50 p-8 rounded-3xl border border-slate-200 space-y-4 hover:shadow-lg transition-all duration-300">
                     <h4 class="font-bold text-slate-900 text-lg flex items-center gap-2"><i class="fa-solid fa-map-location-dot text-amber-600"></i> Hizmet Verdiğimiz Bölgeler</h4>
                     <p class="text-xs text-slate-500 leading-relaxed">
                         İstanbul genelinde kendi aracımızla adresten alım ve adrese teslimat sağlıyoruz.
                     </p>
                     <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Sultanbeyli</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Ümraniye</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Ataşehir</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Pendik</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Kartal</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Maltepe</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Sancaktepe</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">Kadıköy</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Sultanbeyli</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Ümraniye</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Ataşehir</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Pendik</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Kartal</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Maltepe</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Sancaktepe</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg text-xs font-medium text-slate-700 border border-slate-200 shadow-sm hover:border-amber-500 transition-colors">Kadıköy</span>
                     </div>
                 </div>
 
@@ -178,251 +196,78 @@
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">Uzmanlık Alanlarımız</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Koltuk Döşeme ve Tamir Çözümleri</h2>
-                <p class="text-slate-600 text-base">Oturma gruplarınızı atmak yerine yenileyerek hem bütçenizi koruyun hem de konforunuzu artırın.</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-couch"></i></div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Koltuk Döşeme</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Köşe takımları, berjerler ve oturma grupları için geniş kumaş kartelasıyla yüz değişimi.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-hammer"></i>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-hammer"></i></div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Tamir & Tadilat</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Kırılan ayaklar, gıcırtı yapan ahşap iskeletler ve mekanik aksamların profesyonel onarımı.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-layer-group"></i>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-layer-group"></i></div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Sünger Yenileme</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Çökme yapan oturum minderlerinin, koltuğun yapısına uygun kaliteli sünger takviyesiyle yenilenmesi.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Kumaş Değişimi</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Lekelenmiş veya tarzı eskimiş kumaşların leke tutmayan modern dokumalarla değiştirilmesi.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- GALERİ / 20 ADET FOTOĞRAF - İKİ SIRALI İLERİ-GERİ GEÇİŞLİ SLIDER -->
+    <!-- GALERİ / 60 FOTOĞRAFLI YAZISIZ SADE SLIDER -->
     <section id="galeri" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div class="space-y-3 max-w-2xl">
                     <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-100">El Emeği İşlerimiz</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Atölyemizden Görseller (20 Fotoğraf)</h2>
-                    <p class="text-slate-600 text-base">Atölyemizde özenle yenilediğimiz ve tamir ettiğimiz mobilyalara ait görseller. Ok butonlarıyla kaydırarak inceleyebilirsiniz.</p>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Atölyemizden Görseller</h2>
+                    <p class="text-slate-600 text-base">Atölyemizde özenle yenilediğimiz ve tamir ettiğimiz mobilya örnekleri. Ok butonlarıyla kaydırabilirsiniz.</p>
                 </div>
                 
-                <!-- İleri - Geri Kontrol Butonları -->
                 <div class="flex items-center gap-3 shrink-0">
-                    <button id="slide-prev" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition flex items-center justify-center text-lg shadow-sm border border-slate-200">
+                    <button id="slide-prev" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition-all duration-300 flex items-center justify-center text-lg shadow-sm border border-slate-200 hover:scale-105" aria-label="Önceki Görseller">
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
-                    <button id="slide-next" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition flex items-center justify-center text-lg shadow-sm border border-slate-200">
+                    <button id="slide-next" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition-all duration-300 flex items-center justify-center text-lg shadow-sm border border-slate-200 hover:scale-105" aria-label="Sonraki Görseller">
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Kaydırılabilir Alan (2 Sıralı Izgara) -->
+            <!-- Kaydırılabilir 2 Sıralı Fotoğraf Alanı -->
             <div id="gallery-container" class="overflow-x-auto no-scrollbar scroll-smooth py-2">
-                <div class="grid grid-rows-2 grid-flow-col auto-cols-[260px] sm:auto-cols-[300px] gap-6">
+                <div style="display: grid; grid-template-rows: repeat(2, minmax(0, 1fr)); grid-auto-flow: column; grid-auto-columns: 280px; gap: 1.25rem;">
                     
-                    <!-- 1. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is1.jpg" alt="İş 1" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is1.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Koltuk Döşeme</h4></div>
-                    </div>
+                    <!-- BİREBİR KLASÖRDEKİ FOTOĞRAF İSİMLERİ (60 ADET) -->
+                    <script>
+                        const files = [
+                            "1 (1) (1).jpg",
+                            "1 (1).jpg",
+                            "1 (2) (1).jpg",
+                            "1 (2).jpg",
+                            ...Array.from({length: 56}, (_, i) => `1 (${i + 3}).jpg`)
+                        ];
 
-                    <!-- 2. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is2.jpg" alt="İş 2" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is2.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Berjer Kaplama</h4></div>
-                    </div>
-
-                    <!-- 3. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is3.jpg" alt="İş 3" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is3.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Köşe Takımı</h4></div>
-                    </div>
-
-                    <!-- 4. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is4.jpg" alt="İş 4" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is4.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Sandalye Döşeme</h4></div>
-                    </div>
-
-                    <!-- 5. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is5.jpg" alt="İş 5" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is5.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">İskelet Tamiri</h4></div>
-                    </div>
-
-                    <!-- 6. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is6.jpg" alt="İş 6" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is6.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Sünger Yenileme</h4></div>
-                    </div>
-
-                    <!-- 7. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is7.jpg" alt="İş 7" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is7.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Kumaş Değişimi</h4></div>
-                    </div>
-
-                    <!-- 8. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is8.jpg" alt="İş 8" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is8.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Klasik Koltuk</h4></div>
-                    </div>
-
-                    <!-- 9. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is9.jpg" alt="İş 9" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is9.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Puf & Yatak Başı</h4></div>
-                    </div>
-
-                    <!-- 10. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is10.jpg" alt="İş 10" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is10.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Ofis Koltuğu</h4></div>
-                    </div>
-
-                    <!-- 11. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is11.jpg" alt="İş 11" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is11.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Chester Koltuk</h4></div>
-                    </div>
-
-                    <!-- 12. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is12.jpg" alt="İş 12" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is12.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">L Koltuk Yenileme</h4></div>
-                    </div>
-
-                    <!-- 13. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is13.jpg" alt="İş 13" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is13.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Oturma Grubu</h4></div>
-                    </div>
-
-                    <!-- 14. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is14.jpg" alt="İş 14" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is14.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Mutfak Köşesi</h4></div>
-                    </div>
-
-                    <!-- 15. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is15.jpg" alt="İş 15" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is15.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Tekli Berjer</h4></div>
-                    </div>
-
-                    <!-- 16. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is16.jpg" alt="İş 16" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is16.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Kullanılmış Koltuk Tamiri</h4></div>
-                    </div>
-
-                    <!-- 17. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is17.jpg" alt="İş 17" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is17.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Özel Tasarım Kaplama</h4></div>
-                    </div>
-
-                    <!-- 18. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is18.jpg" alt="İş 18" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is18.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Ahşap İskelet Onarımı</h4></div>
-                    </div>
-
-                    <!-- 19. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is19.jpg" alt="İş 19" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is19.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Silinebilir Kumaş Değişimi</h4></div>
-                    </div>
-
-                    <!-- 20. Fotoğraf -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <div class="h-48 bg-slate-200 flex items-center justify-center overflow-hidden relative">
-                            <img src="is20.jpg" alt="İş 20" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                            <div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is20.jpg</p></div>
-                        </div>
-                        <div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Atölye Teslimat İşimiz</h4></div>
-                    </div>
+                        document.write(files.map(f => `
+                            <div class="bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                                <div class="h-56 bg-slate-200 flex items-center justify-center relative overflow-hidden">
+                                    <img src="${f}" alt="Cesur Koltuk Atölye Görseli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 hidden" onload="this.classList.remove('hidden')" loading="lazy">
+                                    <div class="text-center p-4 text-slate-400 absolute inset-0 flex flex-col items-center justify-center -z-0">
+                                        <i class="fa-solid fa-couch text-3xl mb-1 text-slate-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        `).join(''));
+                    </script>
 
                 </div>
             </div>
@@ -435,38 +280,23 @@
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">Usta Tavsiyeleri</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Koltuğunuzu Yeniletirken Nelere Dikkat Etmelisiniz?</h2>
-                <p class="text-slate-600 text-base">25 yıllık tecrübemizle, paranızın karşılığını en iyi şekilde almanız için bilmeniz gerekenler.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm">
-                    <div class="w-12 h-12 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md">
-                        <i class="fa-solid fa-lightbulb"></i>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md"><i class="fa-solid fa-lightbulb"></i></div>
                     <h3 class="text-xl font-bold text-slate-900">1. İskelet Sağlamlığı Kontrolü</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Sadece kumaş değiştirmek yetmez. Koltuğunuzun iskeletinde zamanla oluşan gevşemeler ve gıcırtılar, döşeme öncesi mutlaka usta ellerce güçlendirilmelidir.
-                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Sadece kumaş değiştirmek yetmez. Koltuğunuzun iskeletinde zamanla oluşan gevşemeler döşeme öncesi mutlaka güçlendirilmelidir.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm">
-                    <div class="w-12 h-12 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md">
-                        <i class="fa-solid fa-lightbulb"></i>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md"><i class="fa-solid fa-lightbulb"></i></div>
                     <h3 class="text-xl font-bold text-slate-900">2. Yaşam Alanınıza Uygun Kumaş</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Evinizde evcil hayvan veya küçük çocuk varsa, kolay silinebilir, leke tutmayan ve dayanıklı dokular tercih etmek uzun vadede kullanım kolaylığı sağlar.
-                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Evinizde evcil hayvan veya küçük çocuk varsa, kolay silinebilir ve leke tutmayan dokular tercih edilmelidir.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm">
-                    <div class="w-12 h-12 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md">
-                        <i class="fa-solid fa-lightbulb"></i>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-md"><i class="fa-solid fa-lightbulb"></i></div>
                     <h3 class="text-xl font-bold text-slate-900">3. Sünger Kalitesi</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Çökme yapmış minderler kalitesiz süngerlerle doldurulursa kısa sürede tekrar bozulur. Kullanım sıklığına göre en doğru yoğunlukta sünger seçilmelidir.
-                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Çökme yapmış minderler kalitesiz süngerlerle doldurulursa kısa sürede tekrar bozulur. Doğru yoğunluk seçilmelidir.</p>
                 </div>
             </div>
         </div>
@@ -481,22 +311,22 @@
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
                     <div class="w-10 h-10 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-base mb-4">1</div>
                     <h4 class="font-bold text-slate-900 mb-2">Fotoğraf Gönderin</h4>
                     <p class="text-slate-600 text-sm">Koltuğunuzun fotoğrafını WhatsApp'tan iletin, detayları konuşalım.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
                     <div class="w-10 h-10 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-base mb-4">2</div>
                     <h4 class="font-bold text-slate-900 mb-2">Usta Görüşü & Kumaş</h4>
                     <p class="text-slate-600 text-sm">İhtiyacınız olan tamir ve kumaş seçeneklerini birlikte belirleyelim.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
                     <div class="w-10 h-10 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-base mb-4">3</div>
                     <h4 class="font-bold text-slate-900 mb-2">Ücretsiz Adresten Alım</h4>
                     <p class="text-slate-600 text-sm">Mobilyanızı evinizden özenle teslim alıp atölyemize getirelim.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 relative shadow-sm hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
                     <div class="w-10 h-10 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-base mb-4">4</div>
                     <h4 class="font-bold text-slate-900 mb-2">Yenilenmiş Teslimat</h4>
                     <p class="text-slate-600 text-sm">Atölyemizde hazırlanan mobilyanızı evinize kurup teslim edelim.</p>
@@ -525,7 +355,6 @@
                                 <p class="text-slate-300 text-sm">Sultanbeyli / İstanbul</p>
                             </div>
                         </div>
-
                         <div class="flex items-start gap-4">
                             <div class="w-12 h-12 bg-amber-600/20 text-amber-500 rounded-xl flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-phone"></i></div>
                             <div>
@@ -533,7 +362,6 @@
                                 <p class="text-slate-300 text-sm">0535 652 90 09</p>
                             </div>
                         </div>
-
                         <div class="flex items-start gap-4">
                             <div class="w-12 h-12 bg-amber-600/20 text-amber-500 rounded-xl flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-envelope"></i></div>
                             <div>
@@ -546,13 +374,11 @@
 
                 <div class="lg:col-span-6 bg-slate-800 p-8 rounded-2xl border border-slate-700 space-y-6">
                     <h3 class="text-xl font-bold text-white">Hızlı Fiyat Teklifi Al</h3>
-                    <p class="text-slate-300 text-sm">
-                        Koltuğunuzun fotoğrafını WhatsApp üzerinden göndererek en pratik şekilde bilgi alabilirsiniz.
-                    </p>
-                    <button onclick="openWhatsAppModal()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                    <p class="text-slate-300 text-sm">Koltuğunuzun fotoğrafını WhatsApp üzerinden göndererek en pratik şekilde bilgi alabilirsiniz.</p>
+                    <button onclick="openWhatsAppModal()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 text-base">
                         <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp ile Fotoğraf Gönder
                     </button>
-                    <a href="tel:05356529009" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                    <a href="tel:05356529009" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 text-base">
                         <i class="fa-solid fa-phone"></i> 0535 652 90 09 Numarasını Ara
                     </a>
                 </div>
@@ -565,9 +391,7 @@
     <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-amber-600 rounded-lg flex items-center justify-center text-white font-bold">
-                    <i class="fa-solid fa-couch text-sm"></i>
-                </div>
+                <div class="w-8 h-8 bg-amber-600 rounded-lg flex items-center justify-center text-white font-bold"><i class="fa-solid fa-couch text-sm"></i></div>
                 <span class="text-white font-bold tracking-wider">CESUR KOLTUK</span>
             </div>
             <div class="text-xs space-y-1">
@@ -588,27 +412,21 @@
     </div>
 
     <!-- WHATSAPP MODALI -->
-    <div id="wa-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 space-y-6 relative shadow-2xl">
-            <button onclick="closeWhatsAppModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center transition">
+    <div id="wa-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 space-y-6 relative shadow-2xl transform scale-95 transition-transform duration-300" id="wa-modal-card">
+            <button onclick="closeWhatsAppModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center transition-colors" aria-label="Kapat">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-
             <div class="text-center space-y-2">
-                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto text-3xl shadow-inner">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto text-3xl shadow-inner"><i class="fa-brands fa-whatsapp"></i></div>
                 <h3 class="text-2xl font-bold text-slate-900">Fotoğrafla Hızlı Teklif Alın</h3>
-                <p class="text-slate-600 text-sm">
-                    Koltuğunuzun fotoğrafını WhatsApp üzerinden gönderin, ustamız hemen inceleyip yardımcı olsun.
-                </p>
+                <p class="text-slate-600 text-sm">Koltuğunuzun fotoğrafını WhatsApp üzerinden gönderin, ustamız hemen inceleyip yardımcı olsun.</p>
             </div>
-
             <div class="space-y-3 pt-2">
-                <a href="https://wa.me/905356529009?text=Merhaba,%20koltugumun%20fotografini%20gonderip%20tamir/doseme%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition text-base">
+                <a href="https://wa.me/905356529009?text=Merhaba,%20koltugumun%20fotografini%20gonderip%20tamir/doseme%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-0.5 text-base">
                     <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp'ı Aç ve Fotoğraf Gönder
                 </a>
-                <a href="tel:05356529009" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition text-base">
+                <a href="tel:05356529009" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-0.5 text-base">
                     <i class="fa-solid fa-phone text-amber-500"></i> 0535 652 90 09 Numarasını Ara
                 </a>
             </div>
@@ -616,27 +434,43 @@
     </div>
 
     <script>
-        // Mobil Menü ve Modal Kontrolleri
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const waModal = document.getElementById('wa-modal');
+        const waModalCard = document.getElementById('wa-modal-card');
 
         menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-        function openWhatsAppModal() { waModal.classList.remove('hidden'); }
-        function closeWhatsAppModal() { waModal.classList.add('hidden'); }
+
+        function openWhatsAppModal() { 
+            waModal.classList.remove('hidden'); 
+            setTimeout(() => {
+                waModal.classList.remove('opacity-0');
+                waModalCard.classList.remove('scale-95');
+                waModalCard.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeWhatsAppModal() { 
+            waModal.classList.add('opacity-0');
+            waModalCard.classList.remove('scale-100');
+            waModalCard.classList.add('scale-95');
+            setTimeout(() => {
+                waModal.classList.add('hidden'); 
+            }, 300);
+        }
+
         waModal.addEventListener('click', (e) => { if (e.target === waModal) closeWhatsAppModal(); });
 
-        // Galeri İleri - Geri Kaydırma Mantığı
         const galleryContainer = document.getElementById('gallery-container');
         const slidePrev = document.getElementById('slide-prev');
         const slideNext = document.getElementById('slide-next');
 
         slideNext.addEventListener('click', () => {
-            galleryContainer.scrollBy({ left: 320, behavior: 'smooth' });
+            galleryContainer.scrollBy({ left: 340, behavior: 'smooth' });
         });
 
         slidePrev.addEventListener('click', () => {
-            galleryContainer.scrollBy({ left: -320, behavior: 'smooth' });
+            galleryContainer.scrollBy({ left: -340, behavior: 'smooth' });
         });
     </script>
 </body>
