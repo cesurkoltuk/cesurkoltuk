@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sultanbeyli Koltuk Döşeme ve Tamir | Cesur Koltuk İstanbul</title>
-    <meta name="description" content="İstanbul Sultanbeyli merkezli Cesur Koltuk; 25 yılı aşkın zanaat tecrübesiyle koltuk döşeme, tamir, iskelet onarımı ve kumaş değişimi hizmeti sunar. Adresten ücretsiz alım.">
+    
+    <!-- SEO METATAGLARI -->
+    <meta name="description" content="İstanbul Sultanbeyli merkezli Cesur Koltuk; 25 yılı aşkın zanaat tecrübesiyle koltuk döşeme, tamir, iskelet onarımı ve kumaş değişimi hizmeti sunar. Adresten ücretsiz alım desteği.">
     <meta name="keywords" content="sultanbeyli koltuk döşeme, istanbul koltuk tamiri, koltuk yüzü değişimi, koltuk süngeri yenileme, koltuk kaplama usta, cesur koltuk">
+    <meta name="author" content="Cesur Koltuk Tamir & Döşeme Atölyesi">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://cesurkoltuk.com/">
+
+    <!-- YEREL SEO TAGLARI -->
+    <meta name="geo.region" content="TR-34">
+    <meta name="geo.placename" content="Sultanbeyli, İstanbul">
+    <meta name="geo.position" content="40.9678;29.2631">
+    <meta name="ICBM" content="40.9678, 29.2631">
+
+    <!-- OPEN GRAPH / SOSYAL MEDYA -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cesurkoltuk.com/">
+    <meta property="og:title" content="Cesur Koltuk | Sultanbeyli Koltuk Döşeme & Tamir Atölyesi">
+    <meta property="og:description" content="25 yıllık tecrübe ile koltuk döşeme, tamir ve sünger yenileme hizmeti. Adresten ücretsiz alım ve teslimat. Fotoğraf gönderin, hemen fiyat alın.">
+    <meta property="og:image" content="https://cesurkoltuk.com/1%20(1).jpg">
+    <meta property="og:locale" content="tr_TR">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         
-        /* Kaydırma Çubuğu Gizleme */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Smooth Transition & Scroll Offset */
         section { scroll-margin-top: 5rem; }
-        
-        .transition-all-custom {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
@@ -57,7 +71,7 @@
                     </a>
                 </div>
 
-                <button id="menu-btn" class="md:hidden text-slate-700 hover:text-amber-600 text-2xl focus:outline-none transition-colors">
+                <button id="menu-btn" class="md:hidden text-slate-700 hover:text-amber-600 text-2xl focus:outline-none transition-colors" aria-label="Menüyü Aç/Kapat">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -209,52 +223,29 @@
         </div>
     </section>
 
-    <!-- GALERİ / 20 FOTOĞRAF (ALT ALTA 2 SIRA İLERİ GERİ KAYDIRMALI) -->
+    <!-- GALERİ / TAM SADE YAZISIZ FOTOĞRAF SLIDERI -->
     <section id="galeri" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div class="space-y-3 max-w-2xl">
                     <span class="text-amber-600 font-bold tracking-wider uppercase text-sm bg-amber-50 px-3 py-1 rounded-lg border border-amber-100">El Emeği İşlerimiz</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Atölyemizden Görseller (20 Fotoğraf)</h2>
-                    <p class="text-slate-600 text-base">Atölyemizde özenle yenilediğimiz mobilyalar. Ok butonlarıyla kaydırarak inceleyebilirsiniz.</p>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Atölyemizden Görseller</h2>
+                    <p class="text-slate-600 text-base">Büyütmek istediğiniz fotoğrafın üzerine tıklayabilirsiniz.</p>
                 </div>
                 
                 <div class="flex items-center gap-3 shrink-0">
-                    <button id="slide-prev" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition-all duration-300 flex items-center justify-center text-lg shadow-sm border border-slate-200 hover:scale-105">
+                    <button id="slide-prev" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition-all duration-300 flex items-center justify-center text-lg shadow-sm border border-slate-200 hover:scale-105" aria-label="Önceki Görseller">
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
-                    <button id="slide-next" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition-all duration-300 flex items-center justify-center text-lg shadow-sm border border-slate-200 hover:scale-105">
+                    <button id="slide-next" class="w-12 h-12 rounded-2xl bg-slate-100 hover:bg-amber-600 text-slate-700 hover:text-white transition-all duration-300 flex items-center justify-center text-lg shadow-sm border border-slate-200 hover:scale-105" aria-label="Sonraki Görseller">
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Kaydırılabilir Alan -->
+            <!-- Kaydırılabilir 2 Sıralı Fotoğraf Alanı -->
             <div id="gallery-container" class="overflow-x-auto no-scrollbar scroll-smooth py-2">
-                <div style="display: grid; grid-template-rows: repeat(2, minmax(0, 1fr)); grid-auto-flow: column; grid-auto-columns: 280px; gap: 1.5rem;">
-                    
-                    <!-- 1 - 20 Fotoğraf Kutuları -->
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is1.jpg" alt="İş 1" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is1.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Koltuk Döşeme</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is2.jpg" alt="İş 2" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is2.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Berjer Kaplama</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is3.jpg" alt="İş 3" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is3.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Köşe Takımı</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is4.jpg" alt="İş 4" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is4.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Sandalye Döşeme</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is5.jpg" alt="İş 5" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is5.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">İskelet Tamiri</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is6.jpg" alt="İş 6" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is6.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Sünger Yenileme</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is7.jpg" alt="İş 7" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is7.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Kumaş Değişimi</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is8.jpg" alt="İş 8" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is8.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Klasik Koltuk</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is9.jpg" alt="İş 9" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is9.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Puf & Yatak Başı</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is10.jpg" alt="İş 10" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is10.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Ofis Koltuğu</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is11.jpg" alt="İş 11" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is11.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Chester Koltuk</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is12.jpg" alt="İş 12" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is12.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">L Koltuk Yenileme</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is13.jpg" alt="İş 13" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is13.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Oturma Grubu</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is14.jpg" alt="İş 14" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is14.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Mutfak Köşesi</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is15.jpg" alt="İş 15" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is15.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Tekli Berjer</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is16.jpg" alt="İş 16" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is16.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Koltuk Tamiri</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is17.jpg" alt="İş 17" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is17.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Özel Tasarım</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is18.jpg" alt="İş 18" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is18.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">İskelet Onarımı</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is19.jpg" alt="İş 19" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is19.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Kumaş Değişimi</h4></div></div>
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"><div class="h-48 bg-slate-200 flex items-center justify-center relative"><img src="is20.jpg" alt="İş 20" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')"><div class="text-center p-4 text-slate-400"><i class="fa-solid fa-camera text-3xl mb-1"></i><p class="text-[11px] font-semibold">is20.jpg</p></div></div><div class="p-3 text-center"><h4 class="font-bold text-slate-900 text-sm">Atölye Teslimat</h4></div></div>
-
+                <div id="gallery-grid" style="display: grid; grid-template-rows: repeat(2, minmax(0, 1fr)); grid-auto-flow: column; grid-auto-columns: 280px; gap: 1.25rem;">
                 </div>
             </div>
         </div>
@@ -362,7 +353,7 @@
                     <h3 class="text-xl font-bold text-white">Hızlı Fiyat Teklifi Al</h3>
                     <p class="text-slate-300 text-sm">Koltuğunuzun fotoğrafını WhatsApp üzerinden göndererek en pratik şekilde bilgi alabilirsiniz.</p>
                     <button onclick="openWhatsAppModal()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 text-base">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp ile Fotoğraf Gönder
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp ile İletişime Geç
                     </button>
                     <a href="tel:05356529009" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 text-base">
                         <i class="fa-solid fa-phone"></i> 0535 652 90 09 Numarasını Ara
@@ -397,20 +388,20 @@
         </button>
     </div>
 
-    <!-- WHATSAPP MODALI (YUMUŞAK AÇILIŞ EFEKTLİ) -->
+    <!-- WHATSAPP MODALI -->
     <div id="wa-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 space-y-6 relative shadow-2xl transform scale-95 transition-transform duration-300" id="wa-modal-card">
-            <button onclick="closeWhatsAppModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center transition-colors">
+            <button onclick="closeWhatsAppModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center transition-colors" aria-label="Kapat">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <div class="text-center space-y-2">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto text-3xl shadow-inner"><i class="fa-brands fa-whatsapp"></i></div>
-                <h3 class="text-2xl font-bold text-slate-900">Fotoğrafla Hızlı Teklif Alın</h3>
-                <p class="text-slate-600 text-sm">Koltuğunuzun fotoğrafını WhatsApp üzerinden gönderin, ustamız hemen inceleyip yardımcı olsun.</p>
+                <h3 class="text-2xl font-bold text-slate-900">WhatsApp İletişim</h3>
+                <p class="text-slate-600 text-sm">Ustamızla WhatsApp üzerinden doğrudan görüşebilirsiniz.</p>
             </div>
             <div class="space-y-3 pt-2">
-                <a href="https://wa.me/905356529009?text=Merhaba,%20koltugumun%20fotografini%20gonderip%20tamir/doseme%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-0.5 text-base">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp'ı Aç ve Fotoğraf Gönder
+                <a href="https://wa.me/905356529009?text=Merhaba,%20bilgi%20alabilir%20miyim%3F" target="_blank" rel="noopener" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-0.5 text-base">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp'ı Aç
                 </a>
                 <a href="tel:05356529009" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-0.5 text-base">
                     <i class="fa-solid fa-phone text-amber-500"></i> 0535 652 90 09 Numarasını Ara
@@ -419,7 +410,24 @@
         </div>
     </div>
 
+    <!-- FOTOĞRAF BÜYÜTME (LIGHTBOX) MODALI -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white/80 hover:text-white text-3xl font-bold z-10 p-2">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl backdrop-blur-sm transition">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="max-w-4xl max-h-[85vh] overflow-hidden rounded-2xl">
+            <img id="lightbox-img" src="" alt="Büyütülmüş Görsel" class="max-w-full max-h-[85vh] object-contain mx-auto">
+        </div>
+        <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl backdrop-blur-sm transition">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
     <script>
+        // MENÜ & MODAL MANTIĞI
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const waModal = document.getElementById('wa-modal');
@@ -447,16 +455,69 @@
 
         waModal.addEventListener('click', (e) => { if (e.target === waModal) closeWhatsAppModal(); });
 
-        const galleryContainer = document.getElementById('gallery-container');
-        const slidePrev = document.getElementById('slide-prev');
-        const slideNext = document.getElementById('slide-next');
+        // DOSYA LİSTESİ DÜZENLEME & KODLAMA (URL SAFE)
+        const imageFiles = [
+            "1 (1) (1).jpg",
+            "1 (1).jpg",
+            "1 (2) (1).jpg",
+            "1 (2).jpg",
+            ...Array.from({length: 56}, (_, i) => `1 (${i + 3}).jpg`)
+        ];
 
-        slideNext.addEventListener('click', () => {
-            galleryContainer.scrollBy({ left: 320, behavior: 'smooth' });
+        const galleryGrid = document.getElementById('gallery-grid');
+        let currentImgIndex = 0;
+
+        galleryGrid.innerHTML = imageFiles.map((f, index) => {
+            const safeSrc = encodeURIComponent(f);
+            return `
+                <div onclick="openLightbox(${index})" class="bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+                    <div class="h-56 bg-slate-200 flex items-center justify-center relative overflow-hidden">
+                        <img src="${safeSrc}" alt="Cesur Koltuk Atölye Görseli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        // FOTOĞRAF BÜYÜTME (LIGHTBOX) FONKSİYONLARI
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(index) {
+            currentImgIndex = index;
+            lightboxImg.src = encodeURIComponent(imageFiles[currentImgIndex]);
+            lightbox.classList.remove('hidden');
+            setTimeout(() => lightbox.classList.remove('opacity-0'), 10);
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            setTimeout(() => lightbox.classList.add('hidden'), 300);
+        }
+
+        function prevImage() {
+            currentImgIndex = (currentImgIndex - 1 + imageFiles.length) % imageFiles.length;
+            lightboxImg.src = encodeURIComponent(imageFiles[currentImgIndex]);
+        }
+
+        function nextImage() {
+            currentImgIndex = (currentImgIndex + 1) % imageFiles.length;
+            lightboxImg.src = encodeURIComponent(imageFiles[currentImgIndex]);
+        }
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
         });
 
-        slidePrev.addEventListener('click', () => {
-            galleryContainer.scrollBy({ left: -320, behavior: 'smooth' });
+        // SLIDER BUTONLARI
+        const galleryContainer = document.getElementById('gallery-container');
+        document.getElementById('slide-next').addEventListener('click', () => {
+            galleryContainer.scrollBy({ left: 340, behavior: 'smooth' });
+        });
+        document.getElementById('slide-prev').addEventListener('click', () => {
+            galleryContainer.scrollBy({ left: -340, behavior: 'smooth' });
         });
     </script>
 </body>
