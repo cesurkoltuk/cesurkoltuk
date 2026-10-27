@@ -48,6 +48,48 @@
             opacity: 1;
             transform: translateY(0);
         }
+        /* Animasyonlar yalnızca JavaScript aktifken uygulanır. */
+.js .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.js .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hareket hassasiyeti olan ziyaretçiler için */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* Galeri fotoğrafları */
+#gallery-grid img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery-grid button:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #d97706;
+    outline-offset: 3px;
+}
     </style>
 </head>
 <body class="bg-stone-50 text-slate-800 antialiased selection:bg-amber-600 selection:text-white">
