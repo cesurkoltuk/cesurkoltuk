@@ -630,4 +630,181 @@ a:focus-visible {
         });
     </script>
 </body>
+    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const waModal = document.getElementById("wa-modal");
+    const waModalCard = document.getElementById("wa-modal-card");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const galleryGrid = document.getElementById("gallery-grid");
+    const galleryContainer = document.getElementById("gallery-container");
+
+    // Mobil menü
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", function () {
+            const isOpening = mobileMenu.classList.contains("hidden");
+            mobileMenu.classList.toggle("hidden");
+            menuBtn.setAttribute("aria-expanded", String(isOpening));
+        });
+
+        mobileMenu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                mobileMenu.classList.add("hidden");
+                menuBtn.setAttribute("aria-expanded", "false");
+            });
+        });
+    }
+
+    // WhatsApp penceresi
+    window.openWhatsAppModal = function () {
+        if (!waModal) return;
+        waModal.classList.remove("hidden");
+        requestAnimationFrame(function () {
+            waModal.classList.remove("opacity-0");
+            if (waModalCard) {
+                waModalCard.classList.remove("scale-95");
+                waModalCard.classList.add("scale-100");
+            }
+        });
+    };
+
+    window.closeWhatsAppModal = function () {
+        if (!waModal) return;
+        waModal.classList.add("opacity-0");
+        if (waModalCard) {
+            waModalCard.classList.remove("scale-100");
+            waModalCard.classList.add("scale-95");
+        }
+        setTimeout(function () {
+            waModal.classList.add("hidden");
+        }, 300);
+    };
+
+    if (waModal) {
+        waModal.addEventListener("click", function (event) {
+            if (event.target === waModal) window.closeWhatsAppModal();
+        });
+    }
+
+    // Galeri: Dosya adları mevcut GitHub görsellerine göre düzenlendi.
+    const imageFiles = [
+        "1 (1) (1).jpg",
+        "1 (1).jpg",
+        "1 (2) (1).jpg",
+        "1 (2).jpg",
+        ...Array.from({ length: 56 }, (_, i) => `1 (${i + 3}).jpg`)
+    ];
+
+    let currentImgIndex = 0;
+
+    function imagePath(filename) {
+        return filename.split("/").map(encodeURIComponent).join("/");
+    }
+
+    function showImage(index) {
+        if (!lightbox || !lightboxImg) return;
+        currentImgIndex = (index + imageFiles.length) % imageFiles.length;
+        lightboxImg.src = imagePath(imageFiles[currentImgIndex]);
+        lightboxImg.alt = "Cesur Koltuk atölye çalışması " + (currentImgIndex + 1);
+    }
+
+    if (galleryGrid) {
+        galleryGrid.innerHTML = imageFiles.map(function (filename, index) {
+            return `
+                <button type="button"
+                    class="gallery-item bg-stone-200 rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all group text-left"
+                    data-index="${index}"
+                    aria-label="Atölye fotoğrafını büyüt ${index + 1}">
+                    <div class="h-56 bg-stone-200 overflow-hidden">
+                        <img
+                            src="${imagePath(filename)}"
+                            alt="Cesur Koltuk koltuk döşeme çalışması ${index + 1}"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                            decoding="async">
+                    </div>
+                </button>`;
+        }).join("");
+
+        galleryGrid.addEventListener("click", function (event) {
+            const button = event.target.closest("[data-index]");
+            if (!button) return;
+
+            showImage(Number(button.dataset.index));
+            lightbox.classList.remove("hidden");
+            requestAnimationFrame(function () {
+                lightbox.classList.remove("opacity-0");
+            });
+        });
+    }
+
+    window.closeLightbox = function () {
+        if (!lightbox) return;
+        lightbox.classList.add("opacity-0");
+        setTimeout(function () {
+            lightbox.classList.add("hidden");
+        }, 300);
+    };
+
+    window.prevImage = function () {
+        showImage(currentImgIndex - 1);
+    };
+
+    window.nextImage = function () {
+        showImage(currentImgIndex + 1);
+    };
+
+    if (lightbox) {
+        lightbox.addEventListener("click", function (event) {
+            if (event.target === lightbox) window.closeLightbox();
+        });
+    }
+
+    // Galeri kaydırma düğmeleri
+    const nextBtn = document.getElementById("slide-next");
+    const prevBtn = document.getElementById("slide-prev");
+
+    if (galleryContainer && nextBtn) {
+        nextBtn.addEventListener("click", function () {
+            galleryContainer.scrollBy({ left: 320, behavior: "smooth" });
+        });
+    }
+
+    if (galleryContainer && prevBtn) {
+        prevBtn.addEventListener("click", function () {
+            galleryContainer.scrollBy({ left: -320, behavior: "smooth" });
+        });
+    }
+
+    // Açılış animasyonları
+    function revealOnScroll() {
+        document.querySelectorAll(".reveal").forEach(function (element) {
+            if (element.getBoundingClientRect().top < window.innerHeight - 80) {
+                element.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll, { passive: true });
+    revealOnScroll();
+
+    // Klavye ile fotoğraf penceresini kontrol etme
+    document.addEventListener("keydown", function (event) {
+        if (lightbox && !lightbox.classList.contains("hidden")) {
+            if (event.key === "Escape") window.closeLightbox();
+            if (event.key === "ArrowLeft") window.prevImage();
+            if (event.key === "ArrowRight") window.nextImage();
+        }
+
+        if (event.key === "Escape" && waModal &&
+            !waModal.classList.contains("hidden")) {
+            window.closeWhatsAppModal();
+        }
+    });
+});
+</script>
+
 </html>
